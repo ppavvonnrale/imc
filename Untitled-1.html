@@ -8,6 +8,7 @@
 			<input type="number" name="altura" id="altura" onchange="calcular_imc(event)">
 			<input type="number" name="peso" id="peso" onchange="calcular_imc(event)">
 			<button type="submit"> calcular imc</button>
+			<img id="photo" src="" alt="">
 		</form>
 		<h2 id="resu"></h2>
 			<SCRIPT type="text/javascript">
@@ -21,8 +22,17 @@
 				var peso;
 				altura = document.getElementById("altura").value;
 				peso = document.getElementById("peso").value;
+				var res = peso/(altura*altura);
 			
-				document.getElementById("resu").innerText = peso/(altura*altura);					
+				document.getElementById("resu").innerText = res;
+				if (res < 25) {
+					photo.src = "./flaco.png";
+					
+				}
+				if (res > 25 && res < 40) {
+					photo.src = "./normal.png";
+					
+				}
 			}
 			
 		</SCRIPT>
