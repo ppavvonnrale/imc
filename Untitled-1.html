@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<HTML>
+	<HEAD>
+		<TITLE>Calculadora de IMC</TITLE>
+	</HEAD>
+	<BODY>
+		<form action="" onsubmit="calcular_imc(event)">
+			<input type="number" name="altura" id="altura" onchange="calcular_imc(event)">
+			<input type="number" name="peso" id="peso" onchange="calcular_imc(event)">
+			<button type="submit"> calcular imc</button>
+		</form>
+		<h2 id="resu"></h2>
+			<SCRIPT type="text/javascript">
+			//Este codigo ha sido generado por el modulo psexport 20180802-w32 de PSeInt.
+			//Es posible que el codigo generado no sea completamente correcto. Si encuentra
+			//errores por favor reportelos en el foro (http://pseint.sourceforge.net).
+
+			function calcular_imc(event) {
+				event.preventDefault();
+				var altura;
+				var peso;
+				altura = document.getElementById("altura").value;
+				peso = document.getElementById("peso").value;
+			
+				document.getElementById("resu").innerText = peso/(altura*altura);					
+			}
+			
+		</SCRIPT>
+	</BODY>
+</HTML>
