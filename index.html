@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<HTML>
+	<HEAD>
+		<TITLE>Calculadora de IMC</TITLE>
+	</HEAD>
+	<BODY>
+		<center>
+			<form action="">
+				<div id="contalt" class="cont">
+					<label for="altura">Altura</label>
+					<input type="number" autofocus name="altura" id="altura" onchange="calcular_imc(event)">
+				</div>
+				
+				<div id="contpeso" class="cont">
+					<label for="peso">Peso</label>
+					<input type="number" name="peso" id="peso" onchange="calcular_imc(event)">
+				</div>
+				
+				<img id="photo" style="display: block;" src="" alt="">
+			</form>
+			<h2 id="resu"></h2>
+		</center>
+		
+			<SCRIPT type="text/javascript">
+			//Este codigo ha sido generado por el modulo psexport 20180802-w32 de PSeInt.
+			//Es posible que el codigo generado no sea completamente correcto. Si encuentra
+			//errores por favor reportelos en el foro (http://pseint.sourceforge.net).
+
+			function calcular_imc(event) {
+				event.preventDefault();
+				var altura;
+				var peso;
+				altura = document.getElementById("altura").value;
+				peso = document.getElementById("peso").value;
+				var res = peso/(altura*altura);
+			
+				document.getElementById("resu").innerText = res;
+				if (res < 25) {
+					photo.src = "./flaco.png";
+					
+				}
+				if (res > 25 && res < 40) {
+					photo.src = "./normal.png";
+					
+				}
+			}
+			
+		</SCRIPT>
+	</BODY>
+</HTML>
