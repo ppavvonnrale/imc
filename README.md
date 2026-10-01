@@ -1,106 +1,85 @@
-# imc
+```markdown
+# Calculadora de IMC (Índice de Masa Corporal) ⚖️📊
 
-Calculadora de IMC
+Una aplicación sencilla e intuitiva en Python diseñada para calcular el Índice de Masa Corporal (IMC) a partir del peso y la altura del usuario, proporcionando una clasificación según los rangos estándar de la OMS.
 
-Programa sencillo que permite calcular el Índice de Masa Corporal (IMC) ingresando el peso y la altura de una persona. El sistema realiza el cálculo automáticamente y muestra el resultado obtenido.
+---
 
+## 🚀 Características
 
-Este proyecto fue desarrollado como una aplicación sencilla para aprender a trabajar con entradas de datos, operaciones matemáticas y resultados en pantalla.
+* **Cálculo preciso:** Determina el IMC utilizando la fórmula estándar: $\text{IMC} = \frac{\text{peso (kg)}}{\text{altura (m)}^2}$.
+* **Clasificación del estado de salud:** Entrega un diagnóstico instantáneo (bajo peso, peso normal, sobrepeso, obesidad).
+* **Validación de datos:** Asegura que los valores ingresados (peso y altura) sean números válidos y positivos.
+* **Interfaz limpia:** Fácil de usar directamente desde la terminal o consola.
 
-El IMC se calcula mediante la siguiente fórmula:
+---
 
-IMC = peso / altura²
+## 🛠️ Requisitos Previos
 
-> El IMC es una medida orientativa y no constituye por sí solo una evaluación médica.
+* **Python 3.x** instalado en tu sistema. Puedes comprobarlo ejecutando:
+  ```bash
+  python --version
 
+```
 
+---
 
-⚙️ Funcionamiento
+## 📥 Instalación y Uso
 
-1. El usuario ingresa su peso en kilogramos (kg).
+1. **Clona el repositorio:**
+```bash
+git clone [https://github.com/ppavvonnrale/imc.git](https://github.com/ppavvonnrale/imc.git)
 
-
-2. Ingresa su altura en metros (m).
-
-
-3. El programa calcula el IMC utilizando la fórmula correspondiente.
-
-
-4. Se muestra el resultado en pantalla.
-
-
-
-Ejemplo
-
-Si una persona ingresa:
-
-Peso: 70 kg
-
-Altura: 1.75 m
+```
 
 
-El cálculo sería:
+2. **Accede al directorio del proyecto:**
+```bash
+cd imc
 
-IMC = 70 / (1.75 × 1.75)
-IMC = 22.86
-
-🚀 Instalación
-
-1. Clonar el repositorio:
+```
 
 
+3. **Ejecuta el script principal:**
+```bash
+python main.py
 
-git clone https://github.com/USUARIO/NOMBRE-DEL-REPOSITORIO.git
-
-2. Entrar en la carpeta del proyecto:
-
-
-
-cd NOMBRE-DEL-REPOSITORIO
-
-3. Abrir el archivo principal del proyecto o ejecutarlo utilizando el entorno correspondiente.
+```
 
 
+*(Asegúrate de reemplazar `main.py` por el nombre de tu archivo principal si es diferente).*
 
-💻 Tecnologías utilizadas
+---
 
-HTML5 — estructura de la aplicación.
+## 📂 Estructura del Proyecto
 
-CSS3 — diseño y estilos.
+```text
+imc/
+├── src/                # Código fuente del proyecto
+├── main.py             # Punto de entrada de la aplicación
+├── README.md           # Documentación del proyecto
+└── requirements.txt    # Dependencias (si aplica)
 
-JavaScript — cálculo del IMC y funcionamiento del programa.
+```
 
-Git — control de versiones.
+---
 
-GitHub — almacenamiento y gestión del repositorio.
+## 🤝 Contribuciones
 
+Las contribuciones son bienvenidas. Si deseas mejorar este proyecto:
 
-📁 Estructura del proyecto
+1. Haz un **Fork** del repositorio.
+2. Crea una rama para tu función (`git checkout -b feature/nueva-funcion`).
+3. Realiza tus cambios y haz un commit (`git commit -m 'Añade nueva función'`).
+4. Haz Push a la rama (`git push origin feature/nueva-funcion`).
+5. Abre un **Pull Request**.
 
-calculadora-imc/
-│
-├── index.html
-├── style.css
-├── script.js
-└── README.md
+---
 
-🧮 Fórmula utilizada
+## 📄 Licencia
 
-IMC = peso (kg) / altura² (m)
+Este proyecto está bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
 
-🎯 Objetivos del proyecto
+```
 
-Aprender a utilizar HTML, CSS y JavaScript.
-
-Practicar operaciones matemáticas mediante JavaScript.
-
-Trabajar con datos introducidos por el usuario.
-
-Aprender a utilizar Git y GitHub.
-
-Crear y documentar un proyecto mediante un archivo README.md.
-
-
-👨‍💻 Autor
-
-Proyecto realizado por Pavón Rocío como parte de un proyecto escolar de programación.
+```
