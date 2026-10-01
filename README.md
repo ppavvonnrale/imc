@@ -1,4 +1,4 @@
-```markdown
+
 # Calculadora de IMC (Índice de Masa Corporal) ⚖️📊
 
 Una aplicación sencilla e intuitiva en Python diseñada para calcular el Índice de Masa Corporal (IMC) a partir del peso y la altura del usuario, proporcionando una clasificación según los rangos estándar de la OMS.
@@ -20,7 +20,7 @@ Una aplicación sencilla e intuitiva en Python diseñada para calcular el Índic
   ```bash
   python --version
 
-```
+
 
 ---
 
